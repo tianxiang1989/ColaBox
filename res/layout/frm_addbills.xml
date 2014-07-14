@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayout02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="80dp"
+                android:text="选择账目"
+                android:textAppearance="?android:attr/textAppearanceLarge" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/edittext_acctitem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:cursorVisible="false"
+                android:editable="false"
+                android:maxLines="1"
+                android:width="200dp" >
+            </EditText>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+        <LinearLayout
+            android:id="@+id/LinearLayout03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/TextView03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="80dp"
+                android:text="填入费用"
+                android:textAppearance="?android:attr/textAppearanceLarge" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/Fee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numeric="decimal"
+                android:width="160dp" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/TextView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(元)"
+                android:textAppearance="?android:attr/textAppearanceLarge" >
+            </TextView>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+        <LinearLayout
+            android:id="@+id/LinearLayout04"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="2dp"
+                android:fadingEdge="horizontal"
+                android:height="24dp"
+                android:text="选择时间" >
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/vdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:width="120dp" >
+            </TextView>
+
+            <Button
+                android:id="@+id/BtnDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                 >
+            </Button>
+
+            <TextView
+                android:id="@+id/vtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:width="80dp" >
+            </TextView>
+
+            <Button
+                android:id="@+id/BtnTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:textSize="24sp"
+                android:textStyle="bold" >
+            </Button>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+        <LinearLayout
+            android:id="@+id/LinearLayout06"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="80dp"
+                android:text="账目类型"
+                android:textAppearance="?android:attr/textAppearanceLarge" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/Spinner01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="200dp" >
+            </Spinner>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+        <TextView
+            android:id="@+id/TextView07"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:height="24dp"
+            android:text="填写备注" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/EditTextDESC"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:lines="4" >
+        </EditText>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+        <LinearLayout
+            android:id="@+id/LinearLayout08"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/BtnSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="保 存"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:width="160dp" >
+            </Button>
+
+            <Button
+                android:id="@+id/BtnCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="取 消"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:width="160dp" >
+            </Button>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+    </LinearLayout>
+
+</ScrollView>
